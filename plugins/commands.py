@@ -43,16 +43,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                    InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇꜱ •', callback_data='channels')
-                ],[
-                    InlineKeyboardButton('• ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='help'),
-                    InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
-                ],[
-                    InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
-                  ]]
+            InlineKeyboardButton('⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://telegram.me/mvvaibhav'),
+            InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data='seeplans')
+            ],[
+            InlineKeyboardButton("🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫", callback_data="shortlink_info")
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
@@ -109,16 +106,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                    InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇꜱ •', callback_data='channels')
-                ],[
-                    InlineKeyboardButton('• ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='help'),
-                    InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
-                ],[
-                    InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
-                  ]]
+            InlineKeyboardButton('⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://telegram.me/mvvaibhav'),
+            InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data='seeplans')
+            ],[
+            InlineKeyboardButton("🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫", callback_data="shortlink_info")
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
@@ -202,7 +196,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('<b>+ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ +</b>', callback_data=f'generate_stream_link:{file_id}'),
+                                InlineKeyboardButton('+ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ +', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
                                 InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/mvvaibhav') #Don't change anything without contacting me @LazyDeveloperr
@@ -221,10 +215,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('<b>+ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ +</b>', callback_data=f'generate_stream_link:{file_id}'),
+                                InlineKeyboardButton('+ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ +', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/HP_MOVIES_WORLD') #Don't change anything without contacting me @LazyDeveloperr
+                                InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/mvvaibhav') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -316,7 +310,7 @@ async def start(client, message):
         chat_id = int("-" + file_id.split("-")[1])
         userid = message.from_user.id if message.from_user else None
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=allfiles_{file_id}")
-        k = await client.send_message(chat_id=message.from_user.id,text=f"🫂 ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n‼️ ɢᴇᴛ ᴀʟʟ ꜰɪʟᴇꜱ ɪɴ ᴀ ꜱɪɴɢʟᴇ ʟɪɴᴋ ‼️\n\n✅ ʏᴏᴜʀ ʟɪɴᴋ ɪꜱ ʀᴇᴀᴅʏ, ᴋɪɴᴅʟʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ.\n\n", reply_markup=InlineKeyboardMarkup(
+        k = await client.send_message(chat_id=message.from_user.id,text=f"ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n‼️ ɢᴇᴛ ᴀʟʟ ꜰɪʟᴇꜱ ɪɴ ᴀ ꜱɪɴɢʟᴇ ʟɪɴᴋ ‼️\n\n✅ ʏᴏᴜʀ ʟɪɴᴋ ɪꜱ ʀᴇᴀᴅʏ, ᴋɪɴᴅʟʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ.\n\n", reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton('✅ ᴅᴏᴡɴʟᴏᴀᴅ ✅', url=g)
@@ -410,7 +404,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('<b>+ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ +</b>', callback_data=f'generate_stream_link:{file_id}'),
+              InlineKeyboardButton('+ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ +', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
               InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/mvvaibhav') #Don't change anything without contacting me @LazyDeveloperr
@@ -486,7 +480,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('<b>+ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ +</b>', callback_data=f'generate_stream_link:{file_id}'),
+              InlineKeyboardButton('+ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ +', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
               InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/mvvaibhav') #Don't change anything without contacting me @LazyDeveloperr
@@ -549,10 +543,10 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('<b>+ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ +</b>', callback_data=f'generate_stream_link:{file_id}'),
+              InlineKeyboardButton('+ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ +', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/HP_MOVIES_WORLD') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/mvvaibhav') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
@@ -834,7 +828,7 @@ async def settings(client, message):
                 ),
             ],
             [
-                InlineKeyboardButton('⇋ ᴄʟᴏꜱᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ ⇋', 
+                InlineKeyboardButton('⌁ ᴄʟᴏꜱᴇ ⌁', 
                                      callback_data='close_data'
                                      )
             ]
@@ -1223,7 +1217,7 @@ async def settutorial(bot, message):
     else:
         pass
     if len(message.command) == 1:
-        return await message.reply("<b>ɢɪᴠᴇ ᴍᴇ ᴀ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ᴀʟᴏɴɢ ᴡɪᴛʜ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ.\n\nᴜꜱᴀɢᴇ : /set_tutorial <code>https://t.me/HowToOpenHP</code></b>")
+        return await message.reply("<b>ɢɪᴠᴇ ᴍᴇ ᴀ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ᴀʟᴏɴɢ ᴡɪᴛʜ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ.\n\nᴜꜱᴀɢᴇ : /set_tutorial <code>https://t.me/</code></b>")
     elif len(message.command) == 2:
         reply = await message.reply_text("<b>ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ...</b>")
         tutorial = message.command[1]
@@ -1231,7 +1225,7 @@ async def settutorial(bot, message):
         await save_group_settings(grpid, 'is_tutorial', True)
         await reply.edit_text(f"<b>✅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴀᴅᴅᴇᴅ ᴛᴜᴛᴏʀɪᴀʟ\n\nʏᴏᴜʀ ɢʀᴏᴜᴘ : {title}\n\nʏᴏᴜʀ ᴛᴜᴛᴏʀɪᴀʟ : <code>{tutorial}</code></b>")
     else:
-        return await message.reply("<b>ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ɪɴᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ !\nᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ : /set_tutorial <code>https://t.me/HowToOpenHP</code></b>")
+        return await message.reply("<b>ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ɪɴᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ !\nᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ : /set_tutorial <code>https://t.me/</code></b>")
 
 @Client.on_message(filters.command("remove_tutorial"))
 async def removetutorial(bot, message):
