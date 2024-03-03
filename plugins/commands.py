@@ -26,9 +26,9 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('🤖  ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 🤖', url="https://telegram.me/mvvaibhav")
                 ],[
-                    InlineKeyboardButton('🍁 ʜᴏᴡ ᴛᴏ ᴜꜱᴇ 🍁', url="https://t.me/{temp.U_NAME}?start=help")
+                    InlineKeyboardButton('💁‍♂️ sᴇᴇ ᴍᴇ 💁‍♂️', url=f"https://telegram.me/toji_Mv_Bot")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -57,14 +57,14 @@ async def start(client, message):
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
         if curr_time < 12:
-            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
+            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ" 
         elif curr_time < 17:
-            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
+            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ" 
         elif curr_time < 21:
-            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
+            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ"
         else:
-            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
-        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ ʙᴏᴛ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
+            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ"
+        m=await message.reply_text("<i>ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
         await asyncio.sleep(0.4)
         await m.edit_text("👀")
         await asyncio.sleep(0.5)
