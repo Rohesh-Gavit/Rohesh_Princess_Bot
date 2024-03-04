@@ -304,7 +304,7 @@ async def start(client, message):
         chat_id = int("-" + file_id.split("-")[1])
         userid = message.from_user.id if message.from_user else None
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=allfiles_{file_id}")
-        k = await client.send_message(chat_id=message.from_user.id,text=f"ʜᴇʏ {},{} {gtxt}\n\n‼️ ɢᴇᴛ ᴀʟʟ ꜰɪʟᴇꜱ ɪɴ ᴀ ꜱɪɴɢʟᴇ ʟɪɴᴋ ‼️\n\n✅ ʏᴏᴜʀ ʟɪɴᴋ ɪꜱ ʀᴇᴀᴅʏ, ᴋɪɴᴅʟʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ.\n\n", reply_markup=InlineKeyboardMarkup(
+        k = await client.send_message(chat_id=message.from_user.id,text=f"<b>👻ʜᴇʏ {message.from_user.mention},\n\nɴᴀᴍᴇ - <code>{files.file_name}</code> \n\nsɪᴢᴇ - {get_size(files.file_size)}\n\nʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ, ᴘʟᴇᴀsᴇ ɢᴇᴛ ᴜsɪɴɢ ᴛʜɪs ʟɪɴᴋ😋.\n\n</b>", reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton('✅ ᴅᴏᴡɴʟᴏᴀᴅ ✅', url=g)
@@ -340,7 +340,7 @@ async def start(client, message):
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=file_{file_id}")
         k = await client.send_message(
             chat_id=user_id,
-            text=f"<b>ʜᴇʏ {message.from_user.mention},\n\nʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ‼️ ᴛᴀᴘ ᴏɴ ᴛʜᴇ ᴠᴇʀɪꜰʏ ʟɪɴᴋ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ꜰᴏʀ ᴛᴏᴅᴀʏ. 🔋\n\n#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 2/2\n\nɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇꜱ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴꜱ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ ☺️\n\n💶 ꜱᴇɴᴅ /plans ᴛᴏ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ</b>",
+            text=f"<b>👻ʜᴇʏ {message.from_user.mention},\n\nɴᴀᴍᴇ - <code>{files.file_name}</code> \n\nsɪᴢᴇ - {get_size(files.file_size)}\n\nʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ, ᴘʟᴇᴀsᴇ ɢᴇᴛ ᴜsɪɴɢ ᴛʜɪs ʟɪɴᴋ😋.</b>",
             reply_markup=InlineKeyboardMarkup(
                 [[
                     InlineKeyboardButton('✅ ᴅᴏᴡɴʟᴏᴀᴅ ✅', url=g)
@@ -385,7 +385,7 @@ async def start(client, message):
                     InlineKeyboardButton("⁉️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ ⁉️", url=HOWTOVERIFY)
                 ]]
                 await message.reply_text(
-                    text="<b>ʜᴇʏ {message.from_user.mention},\n\nʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ‼️ ᴛᴀᴘ ᴏɴ ᴛʜᴇ ᴠᴇʀɪꜰʏ ʟɪɴᴋ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ꜰᴏʀ ᴛᴏᴅᴀʏ. 🔋\n\nɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇꜱ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴꜱ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ ☺️\n\n💶 ꜱᴇɴᴅ /plans ᴛᴏ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ</b>",
+                    text="<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ‼️ ᴛᴀᴘ ᴏɴ ᴛʜᴇ ᴠᴇʀɪꜰʏ ʟɪɴᴋ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ꜰᴏʀ ᴛᴏᴅᴀʏ. 🔋\n\nɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇꜱ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴꜱ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ ☺️\n\n💶 ꜱᴇɴᴅ /plans ᴛᴏ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -435,7 +435,7 @@ async def start(client, message):
             files_ = await get_file_details(file_id)
             files = files_[0]
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=file_{file_id}")
-            k = await client.send_message(chat_id=message.from_user.id,text=f"ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n✅ ʏᴏᴜʀ ʟɪɴᴋ ɪꜱ ʀᴇᴀᴅʏ, ᴋɪɴᴅʟʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ.\n\n⚠️ ꜰɪʟᴇ ɴᴀᴍᴇ : <code>{files.file_name}</code> \n\n📥 ꜰɪʟᴇ ꜱɪᴢᴇ : <code>{get_size(files.file_size)}</code>\n\n", reply_markup=InlineKeyboardMarkup(
+            k = await client.send_message(chat_id=message.from_user.id,text=f"<b>👻ʜᴇʏ {message.from_user.mention},\n\nɴᴀᴍᴇ - <code>{files.file_name}</code> \n\nsɪᴢᴇ - {get_size(files.file_size)}\n\nʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ, ᴘʟᴇᴀsᴇ ɢᴇᴛ ᴜsɪɴɢ ᴛʜɪs ʟɪɴᴋ😋.</b>\n\n", reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton('✅ ᴅᴏᴡɴʟᴏᴀᴅ ✅', url=g)
