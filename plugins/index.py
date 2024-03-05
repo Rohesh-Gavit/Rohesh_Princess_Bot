@@ -18,7 +18,7 @@ lock = asyncio.Lock()
 async def index_files(bot, query):
     if query.data.startswith('index_cancel'):
         temp.CANCEL = True
-        return await query.answer("Cancelling Indexing")
+        return await query.answer("ᴄᴀɴᴄᴇʟʟɪɴɢ ɪɴᴅᴇxɪɴɢ")
     _, raju, chat, lst_msg_id, from_user = query.data.split("#")
     if raju == 'reject':
         await query.message.delete()
@@ -28,10 +28,10 @@ async def index_files(bot, query):
         return
 
     if lock.locked():
-        return await query.answer('Wait until previous process complete.', show_alert=True)
+        return await query.answer('ᴡᴀɪᴛ ᴜɴᴛɪʟ ᴘʀᴇᴠɪᴏᴜs ᴘʀᴏᴄᴇss ᴄᴏᴍᴘʟᴇᴛᴇ. 🪫', show_alert=True)
     msg = query.message
 
-    await query.answer('Processing...⏳', show_alert=True)
+    await query.answer('ᴘʀᴏᴄᴇssɪɴɢ...⏳', show_alert=True)
     if int(from_user) not in ADMINS:
         await bot.send_message(int(from_user),
                                f'Your Submission for indexing {chat} has been accepted by our moderators and will be added soon.',
@@ -39,7 +39,7 @@ async def index_files(bot, query):
     await msg.edit(
         "Starting Indexing",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton('Cancel', callback_data='index_cancel')]]
+            [[InlineKeyboardButton('🚫 ᴄᴀɴᴄᴇʟ 🚫', callback_data='index_cancel')]]
         )
     )
     try:
@@ -68,56 +68,56 @@ async def send_for_index(bot, message):
     try:
         await bot.get_chat(chat_id)
     except ChannelInvalid:
-        return await message.reply('This may be a private channel / group. Make me an admin over there to index the files.')
+        return await message.reply('ᴛʜɪs ᴍᴀʏ ʙᴇ ᴀ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴏʀ ɢʀᴏᴜᴘ. ᴍᴀᴋᴇ ᴍᴇ ᴀɴ ᴀᴅᴍɪɴ ᴏᴠᴇʀ ᴛʜᴇʀᴇ ᴛᴏ ɪɴᴅᴇx ᴛʜᴇ ғɪʟᴇs. 🥲')
     except (UsernameInvalid, UsernameNotModified):
-        return await message.reply('Invalid Link specified.')
+        return await message.reply('ɪɴᴠᴀʟɪᴅ ʟɪɴᴋ sᴘᴇᴄɪғɪᴇᴅ. 🫥')
     except Exception as e:
         logger.exception(e)
         return await message.reply(f'Errors - {e}')
     try:
         k = await bot.get_messages(chat_id, last_msg_id)
     except:
-        return await message.reply('Make Sure That Iam An Admin In The Channel, if channel is private')
+        return await message.reply('ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ɪ ᴀᴍ ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ, ɪғ ᴄʜᴀɴɴᴇʟ ɪs ᴘʀɪᴠᴀᴛᴇ')
     if k.empty:
-        return await message.reply('This may be group and iam not a admin of the group.')
+        return await message.reply('ᴛʜɪs ᴍᴀʏ ʙᴇ ɢʀᴏᴜᴘ ᴀɴᴅ ɪᴀᴍ ɴᴏᴛ ᴀ ᴀᴅᴍɪɴ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ.')
 
     if message.from_user.id in ADMINS:
         buttons = [
             [
-                InlineKeyboardButton('Yes',
+                InlineKeyboardButton('ʏᴇs🙋',
                                      callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')
             ],
             [
-                InlineKeyboardButton('close', callback_data='close_data'),
+                InlineKeyboardButton('ᴄʟᴏsᴇ 🙅', callback_data='close_data'),
             ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         return await message.reply(
-            f'Do you Want To Index This Channel/ Group ?\n\nChat ID/ Username: <code>{chat_id}</code>\nLast Message ID: <code>{last_msg_id}</code>',
+            f'ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɪɴᴅᴇx ᴛʜɪs ᴄʜᴀɴɴᴇʟ/ ɢʀᴏᴜᴘ ?\n\nᴄʜᴀᴛ ɪᴅ / ᴜsᴇʀɴᴀᴍᴇ - <code>{chat_id}</code>\nʟᴀsᴛ ᴍᴇssᴀɢᴇ ɪᴅ - <code>{last_msg_id}</code>',
             reply_markup=reply_markup)
 
     if type(chat_id) is int:
         try:
             link = (await bot.create_chat_invite_link(chat_id)).invite_link
         except ChatAdminRequired:
-            return await message.reply('Make sure iam an admin in the chat and have permission to invite users.')
+            return await message.reply('ᴍᴀᴋᴇ sᴜʀᴇ ɪ ᴀᴍ ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴄʜᴀᴛ ᴀɴᴅ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ ɪɴᴠɪᴛᴇ ᴜsᴇʀs.')
     else:
         link = f"@{message.forward_from_chat.username}"
     buttons = [
         [
-            InlineKeyboardButton('Accept Index',
+            InlineKeyboardButton('✅ ᴀᴄᴄᴇᴘᴛ ɪɴᴅᴇx ✅',
                                  callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')
         ],
         [
-            InlineKeyboardButton('Reject Index',
+            InlineKeyboardButton('❌ ʀᴇᴊᴇᴄᴛ ɪɴᴅᴇx ❌',
                                  callback_data=f'index#reject#{chat_id}#{message.id}#{message.from_user.id}'),
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
     await bot.send_message(LOG_CHANNEL,
-                           f'#IndexRequest\n\nBy : {message.from_user.mention} (<code>{message.from_user.id}</code>)\nChat ID/ Username - <code> {chat_id}</code>\nLast Message ID - <code>{last_msg_id}</code>\nInviteLink - {link}',
+                           f'#ɪɴᴅᴇxʀᴇᴏ̨ᴜᴇsᴛ\n\nʙʏ : {message.from_user.mention} (<code>{message.from_user.id}</code>)\nᴄʜᴀᴛ ɪᴅ/ ᴜsᴇʀɴᴀᴍᴇ - <code> {chat_id}</code>\nʟᴀsᴛ ᴍᴇssᴀɢᴇ ɪᴅ - <code>{last_msg_id}</code>\nɪɴᴠɪᴛᴇ ʟɪɴᴋ - {link}',
                            reply_markup=reply_markup)
-    await message.reply('ThankYou For the Contribution, Wait For My Moderators to verify the files.')
+    await message.reply('ᴛʜᴀɴᴋʏᴏᴜ ғᴏʀ ᴛʜᴇ ᴄᴏɴᴛʀɪʙᴜᴛɪᴏɴ, ᴡᴀɪᴛ ғᴏʀ ᴍʏ ᴍᴏᴅᴇʀᴀᴛᴏʀs ᴛᴏ ᴠᴇʀɪғʏ ᴛʜᴇ ғɪʟᴇs.')
 
 
 @Client.on_message(filters.command('setskip') & filters.user(ADMINS))
@@ -127,11 +127,11 @@ async def set_skip_number(bot, message):
         try:
             skip = int(skip)
         except:
-            return await message.reply("Skip number should be an integer.")
-        await message.reply(f"Successfully set SKIP number as {skip}")
+            return await message.reply("sᴋɪᴘ ɴᴜᴍʙᴇʀ sʜᴏᴜʟᴅ ʙᴇ ᴀɴ ɪɴᴛᴇɢᴇʀ... 📏")
+        await message.reply(f"sᴜᴄᴄᴇssғᴜʟʟʏ sᴇᴛ SKIP ɴᴜᴍʙᴇʀ ᴀs {skip}")
         temp.CURRENT = int(skip)
     else:
-        await message.reply("Give me a skip number")
+        await message.reply("ɢɪᴠᴇ ᴍᴇ ᴀ sᴋɪᴘ ɴᴜᴍʙᴇʀ...")
 
 
 async def index_files_to_db(lst_msg_id, chat, msg, bot):
@@ -147,14 +147,14 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
             temp.CANCEL = False
             async for message in bot.iter_messages(chat, lst_msg_id, temp.CURRENT):
                 if temp.CANCEL:
-                    await msg.edit(f"Successfully Cancelled!!\n\nSaved <code>{total_files}</code> files to dataBase!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>")
+                    await msg.edit(f"» sᴜᴄᴄᴇssғᴜʟʟʏ ᴄᴀɴᴄᴇʟʟᴇᴅ\n\n» sᴀᴠᴇᴅ <code>{total_files}</code> ғɪʟᴇs ᴛᴏ ᴅᴀᴛᴀʙᴀsᴇ!\n» ᴅᴜᴘʟɪᴄᴀᴛᴇ ғɪʟᴇs sᴋɪᴘᴘᴇᴅ - <code>{duplicate}</code>\n» ᴅᴇʟᴇᴛᴇᴅ ᴍᴇssᴀɢᴇs sᴋɪᴘᴘᴇᴅ - <code>{deleted}</code>\n» ɴᴏɴ-ᴍᴇᴅɪᴀ ᴍᴇssᴀɢᴇs sᴋɪᴘᴘᴇᴅ - <code>{no_media + unsupported}</code>(ᴜɴsᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ - `{unsupported}` )\n» ᴇʀʀᴏʀs ᴏᴄᴄᴜʀʀᴇᴅ - <code>{errors}</code>")
                     break
                 current += 1
                 if current % 20 == 0:
-                    can = [[InlineKeyboardButton('Cancel', callback_data='index_cancel')]]
+                    can = [[InlineKeyboardButton('🚫 ᴄᴀɴᴄᴇʟ 🚫', callback_data='index_cancel')]]
                     reply = InlineKeyboardMarkup(can)
                     await msg.edit_text(
-                        text=f"Total messages fetched: <code>{current}</code>\nTotal messages saved: <code>{total_files}</code>\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>",
+                        text=f"» ᴛᴏᴛᴀʟ ᴍᴇssᴀɢᴇs ғᴇᴛᴄʜᴇᴅ - <code>{current}</code>\n» ᴛᴏᴛᴀʟ ᴍᴇssᴀɢᴇs sᴀᴠᴇᴅ - <code>{total_files}</code>\n» ᴅᴜᴘʟɪᴄᴀᴛᴇ ғɪʟᴇs sᴋɪᴘᴘᴇᴅ - <code>{duplicate}</code>\n» ᴅᴇʟᴇᴛᴇᴅ ᴍᴇssᴀɢᴇs sᴋɪᴘᴘᴇᴅ - <code>{deleted}</code>\n» ɴᴏɴ-ᴍᴇᴅɪᴀ ᴍᴇssᴀɢᴇs sᴋɪᴘᴘᴇᴅ - <code>{no_media + unsupported}</code>(ᴜɴsᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ - `{unsupported}` )\n» ᴇʀʀᴏʀs ᴏᴄᴄᴜʀʀᴇᴅ - <code>{errors}</code>",
                         reply_markup=reply)
                 if message.empty:
                     deleted += 1
@@ -182,4 +182,4 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
             logger.exception(e)
             await msg.edit(f'Error: {e}')
         else:
-            await msg.edit(f'Succesfully saved <code>{total_files}</code> to dataBase!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>')
+            await msg.edit(f'» sᴜᴄᴄᴇssғᴜʟʟʏ sᴀᴠᴇᴅ - <code>{total_files}</code> ᴛᴏ ᴅᴀᴛᴀʙᴀsᴇ\n» ᴅᴜᴘʟɪᴄᴀᴛᴇ ғɪʟᴇs sᴋɪᴘᴘᴇᴅ - <code>{duplicate}</code>\n» ᴅᴇʟᴇᴛᴇᴅ ᴍᴇssᴀɢᴇs sᴋɪᴘᴘᴇᴅ - <code>{deleted}</code>\n» ɴᴏɴ-ᴍᴇᴅɪᴀ ᴍᴇssᴀɢᴇs sᴋɪᴘᴘᴇᴅ - <code>{no_media + unsupported}</code>(ᴜɴsᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴇᴅɪᴀ - `{unsupported}` )\n» ᴇʀʀᴏʀs ᴏᴄᴄᴜʀʀᴇᴅ - <code>{errors}</code>')
