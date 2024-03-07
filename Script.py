@@ -30,9 +30,7 @@ class script(object):
 
 🤖<u> ʙᴏᴛ ᴅᴇᴛᴀɪʟs </u>🤖
 
-» ᴜᴘᴛɪᴍᴇ - <code>{}</code>
-» ʀᴀᴍ - <code>{}</code>
-» ᴄᴘᴜ - <code>{}</code></b>"""
+» ᴜᴘᴛɪᴍᴇ - <code>{}</code></b>"""
 
     LOG_TEXT_G = """⛑ #ɴᴇᴡɢʀᴏᴜᴘ ⛑
     
