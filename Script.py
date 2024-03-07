@@ -20,26 +20,32 @@ class script(object):
 ▫ ғʀᴇᴇ & ᴇᴀsʏ ᴛᴏ ᴜsᴇ.
 ▫ 𝟸𝟺x𝟽 sᴇʀᴠɪᴄᴇs ᴀᴠᴀɪʟᴀʙʟᴇ.</b>"""
     
-    STATUS_TXT = """<b>    
-‣ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{}</code>
-‣ ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ : <code>{}</code>
-‣ ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘꜱ : <code>{}</code>
-‣ ᴜꜱᴇᴅ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code>
-‣ ꜰʀᴇᴇ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code>
-</b>"""
-
-    LOG_TEXT_G = """#NewGroup
+    STATUS_TXT = """<b>🗳<u> ᴅᴀᴛᴀʙᴀsᴇ </u>🗳
     
-Gʀᴏᴜᴘ = {}
-Iᴅ = <code>{}</code>
-Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
-Aᴅᴅᴇᴅ Bʏ - {}
+» ᴛᴏᴛᴀʟ ғɪʟᴇs - <code>{}</code>
+» ᴛᴏᴛᴀʟ ᴜsᴇʀs - <code>{}</code>
+» ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘs - <code>{}</code>
+» ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ - <code>{}</code>
+» ғʀᴇᴇ sᴛᴏʀᴀɢᴇ - <code>{}</code>
+
+🤖<u> ʙᴏᴛ ᴅᴇᴛᴀɪʟs </u>🤖
+
+» ᴜᴘᴛɪᴍᴇ - <code>{}</code>
+» ʀᴀᴍ - <code>{}</code>
+» ᴄᴘᴜ - <code>{}</code></b>"""
+
+    LOG_TEXT_G = """⛑ #ɴᴇᴡɢʀᴏᴜᴘ ⛑
+    
+» ɢʀᴏᴜᴘ - {}
+» ɪᴅ - <code>{}</code>
+» ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀꜱ - <code>{}</code>
+» ᴀᴅᴅᴇᴅ ʙʏ - {}
 """
 
-    LOG_TEXT_P = """#NewUser
+    LOG_TEXT_P = """🐦 #ɴᴇᴡᴜꜱᴇʀ 🐦
     
-Iᴅ - <code>{}</code>
-Nᴀᴍᴇ - {}
+» ɪᴅ - <code>{}</code>
+» ɴᴀᴍᴇ - {}
 """
 
     ALRT_TXT = """{},
