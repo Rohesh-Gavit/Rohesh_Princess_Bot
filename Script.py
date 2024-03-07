@@ -26,8 +26,7 @@ class script(object):
 » ᴛᴏᴛᴀʟ ᴜsᴇʀs - <code>{}</code>
 » ᴛᴏᴛᴀʟ ɢʀᴏᴜᴘs - <code>{}</code>
 » ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ - <code>{}</code>
-» ғʀᴇᴇ sᴛᴏʀᴀɢᴇ - <code>{}</code>
-» ʙᴏᴛ ᴜᴘᴛɪᴍᴇ - <code>{}</code></b>"""
+» ғʀᴇᴇ sᴛᴏʀᴀɢᴇ - <code>{}</code></b>"""
 
     LOG_TEXT_G = """⛑ #ɴᴇᴡɢʀᴏᴜᴘ ⛑
     
