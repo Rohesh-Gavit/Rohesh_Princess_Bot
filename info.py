@@ -22,9 +22,9 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://graph.org/file/a52d21efa52520506e971.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "")
-MELCOW_VID = environ.get("MELCOW_VID", "")
-SPELL_IMG = environ.get("SPELL_IMG", "")
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/0b946f40b487542bead11.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/734170f40b8169830d821.jpg'))
 CODE = (environ.get('CODE', 'https://telegra.ph/Payment-Rohesh-Princess-Bot-02-28-2'))
 
