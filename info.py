@@ -25,8 +25,8 @@ PICS = (environ.get('PICS', 'https://graph.org/file/a52d21efa52520506e971.jpg'))
 NOR_IMG = environ.get("NOR_IMG", "")
 MELCOW_VID = environ.get("MELCOW_VID", "")
 SPELL_IMG = environ.get("SPELL_IMG", "")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', ''))
-CODE = (environ.get('CODE', ''))
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/734170f40b8169830d821.jpg'))
+CODE = (environ.get('CODE', 'https://telegra.ph/Payment-Rohesh-Princess-Bot-02-28-2'))
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'ziplinker.net'))
