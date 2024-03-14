@@ -1,4 +1,4 @@
-pyrofork>=2.0.30 
+pyrogram>=2.0.30 
  tgcrypto 
  pymongo[srv]==3.12.3 
  motor==2.5.1 
@@ -40,7 +40,6 @@ apscheduler
 pyshorteners
 pyromod
 colorama
-
-
+pyrofork
 
   
