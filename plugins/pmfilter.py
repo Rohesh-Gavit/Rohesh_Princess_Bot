@@ -159,7 +159,7 @@ async def next_page(bot, query):
 
         btn.insert(0, 
             [
-                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://t.me/mv_premium/9')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/Payment-Rohesh-Princess-Bot-02-28-2')
             ]
         )
         btn.insert(0, 
@@ -177,7 +177,7 @@ async def next_page(bot, query):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://t.me/mv_premium/9')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/Payment-Rohesh-Princess-Bot-02-28-2')
             ]
         )
         btn.insert(0, 
@@ -396,7 +396,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://t.me/mv_premium/9')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/Payment-Rohesh-Princess-Bot-02-28-2')
             ]
         )
         btn.insert(0, 
@@ -414,7 +414,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://t.me/mv_premium/9')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/Payment-Rohesh-Princess-Bot-02-28-2')
             ]
         )
         btn.insert(0, 
@@ -559,7 +559,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://t.me/mv_premium/9')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/Payment-Rohesh-Princess-Bot-02-28-2')
             ]
         )
         btn.insert(0, 
@@ -577,7 +577,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://t.me/mv_premium/9')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/Payment-Rohesh-Princess-Bot-02-28-2')
             ]
         )
         btn.insert(0, 
@@ -758,7 +758,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://t.me/mv_premium/9')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/Payment-Rohesh-Princess-Bot-02-28-2')
             ]
         )
         btn.insert(0, 
@@ -1527,7 +1527,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://telegram.me/mvvaibhav'),
+            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://telegram.me/Filmy_Rohesh'),
             InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data="seeplans")
             ],[
             InlineKeyboardButton("🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫", callback_data="shortlink_info")
@@ -1568,7 +1568,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "upi_info":
         buttons = [[
-            InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', user_id=int(1936430521))
+            InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', user_id=int(5698613889))
         ],[
             InlineKeyboardButton('🗑 ᴄʟᴏsᴇ 🗑', callback_data='close_data')
         ]]
@@ -1581,7 +1581,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "qr_info":
         buttons = [[
-            InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', user_id=int(1936430521))
+            InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', user_id=int(5698613889))
         ],[
             InlineKeyboardButton('🗑 ᴄʟᴏsᴇ 🗑', callback_data='close_data')
         ]]
@@ -1594,7 +1594,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "seeplans":
         btn = [[
-            InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', user_id=int(1936430521))
+            InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', user_id=int(5698613889))
         ],[
             InlineKeyboardButton('🗑 ᴄʟᴏsᴇ 🗑', callback_data='close_data')
         ]]
@@ -2105,7 +2105,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url='https://t.me/mv_premium/9')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url='https://telegra.ph/Payment-Rohesh-Princess-Bot-02-28-2')
             ]
         )
         btn.insert(0, 
@@ -2123,7 +2123,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url='https://t.me/mv_premium/9')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url='https://telegra.ph/Payment-Rohesh-Princess-Bot-02-28-2')
             ]
         )
         btn.insert(0, 
