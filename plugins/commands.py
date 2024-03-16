@@ -188,7 +188,7 @@ async def start(client, message):
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
-                        [
+                            [
                             [
                                 InlineKeyboardButton('✙ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ ✙', callback_data=f'generate_stream_link:{file_id}'),
                             ],
@@ -207,7 +207,7 @@ async def start(client, message):
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
-                        [
+                            [
                             [
                                 InlineKeyboardButton('✙ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ ✙', callback_data=f'generate_stream_link:{file_id}'),
                             ],
@@ -436,7 +436,7 @@ async def start(client, message):
             files = files_[0]
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=file_{file_id}")
             k = await client.send_message(chat_id=message.from_user.id,text=f"<b>👻ʜᴇʏ {message.from_user.mention},\n\nɴᴀᴍᴇ - <code>{files.file_name}</code> \n\nsɪᴢᴇ - {get_size(files.file_size)}\n\nʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ, ᴘʟᴇᴀsᴇ ɢᴇᴛ ᴜsɪɴɢ ᴛʜɪs ʟɪɴᴋ😋.</b>\n\n", reply_markup=InlineKeyboardMarkup(
-                    [
+                        [
                         [
                             InlineKeyboardButton('✅ ᴅᴏᴡɴʟᴏᴀᴅ ✅', url=g)
                         ], [
@@ -535,7 +535,7 @@ async def start(client, message):
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
-            [
+             [
              [
               InlineKeyboardButton('✙ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ ✙', callback_data=f'generate_stream_link:{file_id}'),
              ],
