@@ -702,23 +702,8 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
                         caption=f_caption,
                         protect_content=True if ident == "filep" else False,
                         reply_markup=InlineKeyboardMarkup(
-                   [
-                        [ 
-                        InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file.file_id}') #Don't change anything without contacting me @LazyDeveloperr
-                        ]
-                    ]
-                )
-            )
-        except UserIsBlocked:
-            logger.error(f"Usᴇʀ: {userid} ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ. Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ!")
-            return "Usᴇʀ ɪs ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ ! Uɴʙʟᴏᴄᴋ ᴛᴏ sᴇɴᴅ ғɪʟᴇs!"
-        except PeerIdInvalid:
-            logger.error("Eʀʀᴏʀ: Pᴇᴇʀ ID ɪɴᴠᴀʟɪᴅ !")
-            return "Pᴇᴇʀ ID ɪɴᴠᴀʟɪᴅ !"
-        except Exception as e:
-            logger.error(f"Eʀʀᴏʀ: {e}")
-            return f"Eʀʀᴏʀ: {e}"
-    return 'done'
+                            [
+                                [
                                 InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                             ],[
@@ -792,3 +777,78 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
         for file in files:
             cap += f"<b><a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
     return cap
+
+reply_markup=InlineKeyboardMarkup(
+                   [
+                        [ 
+                        InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file.file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                        ]
+                    ]
+                )
+            )
+        except UserIsBlocked:
+            logger.error(f"Usᴇʀ: {userid} ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ. Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ!")
+            return "Usᴇʀ ɪs ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ ! Uɴʙʟᴏᴄᴋ ᴛᴏ sᴇɴᴅ ғɪʟᴇs!"
+        except PeerIdInvalid:
+            logger.error("Eʀʀᴏʀ: Pᴇᴇʀ ID ɪɴᴠᴀʟɪᴅ !")
+            return "Pᴇᴇʀ ID ɪɴᴠᴀʟɪᴅ !"
+        except Exception as e:
+            logger.error(f"Eʀʀᴏʀ: {e}")
+            return f"Eʀʀᴏʀ: {e}"
+    return 'done'
+
+async def get_verify_status(userid):
+    status = temp.VERIFY.get(userid)
+    if not status:
+        status = await db.get_verified(userid)
+        temp.VERIFY[userid] = status
+    return status
+    
+async def update_verify_status(userid, date_temp, time_temp):
+    status = await get_verify_status(userid)
+    status["date"] = date_temp
+    status["time"] = time_temp
+    temp.VERIFY[userid] = status
+    await db.update_verification(userid, date_temp, time_temp)
+
+async def verify_user(bot, userid, token):
+    user = await bot.get_users(int(userid))
+    if not await db.is_user_exist(user.id):
+        await db.add_user(user.id, user.first_name)
+        await bot.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(user.id, user.mention))
+    TOKENS[user.id] = {token: True}
+    tz = pytz.timezone('Asia/Kolkata')
+    date_var = datetime.now(tz)+timedelta(hours=12)
+    temp_time = date_var.strftime("%H:%M:%S")
+    date_var, time_var = str(date_var).split(" ")
+    await update_verify_status(user.id, date_var, temp_time)
+
+async def check_verification(bot, userid):
+    user = await bot.get_users(int(userid))
+    if not await db.is_user_exist(user.id):
+        await db.add_user(user.id, user.first_name)
+        await bot.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(user.id, user.mention))
+    tz = pytz.timezone('Asia/Kolkata')
+    today = date.today()
+    now = datetime.now(tz)
+    curr_time = now.strftime("%H:%M:%S")
+    hour1, minute1, second1 = curr_time.split(":")
+    curr_time = time(int(hour1), int(minute1), int(second1))
+    status = await get_verify_status(user.id)
+    date_var = status["date"]
+    time_var = status["time"]
+    years, month, day = date_var.split('-')
+    comp_date = date(int(years), int(month), int(day))
+    hour, minute, second = time_var.split(":")
+    comp_time = time(int(hour), int(minute), int(second))
+    if comp_date<today:
+        return False
+    else:
+        if comp_date == today:
+            if comp_time<curr_time:
+                return False
+            else:
+                return True
+        else:
+            return True
+
