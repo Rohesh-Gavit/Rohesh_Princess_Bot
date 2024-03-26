@@ -777,22 +777,3 @@ async def get_cap(settings, remaining_seconds, files, query, total_results, sear
         for file in files:
             cap += f"<b><a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
     return cap
-
-reply_markup=InlineKeyboardMarkup(
-                   [
-                        [ 
-                        InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file.file_id}') #Don't change anything without contacting me @LazyDeveloperr
-                        ]
-                    ]
-                )
-            )
-        except UserIsBlocked:
-            logger.error(f"Usᴇʀ: {userid} ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ. Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ!")
-            return "Usᴇʀ ɪs ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ ! Uɴʙʟᴏᴄᴋ ᴛᴏ sᴇɴᴅ ғɪʟᴇs!"
-        except PeerIdInvalid:
-            logger.error("Eʀʀᴏʀ: Pᴇᴇʀ ID ɪɴᴠᴀʟɪᴅ !")
-            return "Pᴇᴇʀ ID ɪɴᴠᴀʟɪᴅ !"
-        except Exception as e:
-            logger.error(f"Eʀʀᴏʀ: {e}")
-            return f"Eʀʀᴏʀ: {e}"
-    return 'done'
