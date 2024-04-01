@@ -72,7 +72,7 @@ class script(object):
 
 𝟹) ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ
 
-<b><a href=https://telegram.me/i_m_starboy>~ ʀᴇǫᴜᴇ𝗌ᴛ ᴛᴏ ᴏᴡɴᴇʀ</a></b>"""
+<b><a href=https://telegram.me/Filmy_Rohesh_Owner>~ ʀᴇǫᴜᴇ𝗌ᴛ ᴛᴏ ᴏᴡɴᴇʀ</a></b>"""
     
 
     TOP_ALRT_MSG = """ꜱᴇᴀʀᴄʜɪɴɢ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ... :)"""
@@ -152,7 +152,7 @@ class script(object):
 
     SHORTLINK_INFO = """<b>🤑 ʜᴏᴡ ᴛᴏ ᴇᴀʀɴ ᴍᴏɴᴇʏ ʙʏ ᴛʜɪs ʙᴏᴛ -
 
-1:- ᴍᴀᴋᴇ ᴛʜɪs toji ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
+1:- ᴍᴀᴋᴇ ᴛʜɪs ʙᴏᴛ  ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
 
 2:- ᴜꜱᴇ /connect ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ᴘᴍ.
 
@@ -162,7 +162,7 @@ class script(object):
 
 /shortlink tnshort.net 06b24eb6bbb025713cd522fb3f696b6d5de11354
 
-/set_tutorial https://t.me/How_To_Download_28/11
+/set_tutorial https://t.me/Filmy_Rohesh/56
 
 5:- ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴇᴄᴋ ᴡʜɪᴄʜ sʜᴏʀᴛᴇɴᴇʀ ʏᴏᴜ ʜᴀᴠᴇ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛʜᴇɴ sᴇɴᴅ /shortlink_info ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
 
@@ -231,17 +231,18 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 """ 
    # PLEASE DO NOT REMOVE ANY CREDITS ❤️‍🩹
     
-    CAPTION = """<b>**[{file_name}](https://t.me/mvvaibhav)
+    CAPTION = """<b>**[{file_name}](https://t.me/Filmy_Rohesh)
 ╔════════════════════════╗
-🌼нαρρу ∂σωηℓσα∂ιηg αη∂ ¢σмє αgαιη🌸
-╚════════════════════════╝**</b>"""
+🌺ʜᴀᴘᴘʏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴᴅ ᴄᴏᴍᴇ ᴀɢᴀɪɴ🌷
+╚════════════════════════╝
+ʀᴇqᴜᴇꜱᴛ ᴍᴏᴠɪᴇꜱ & ᴡᴇʙꜱᴇʀɪᴇꜱ & ᴀɴɪᴍᴇ ᴀɪ ɢʀᴏᴜᴩ 🤖 ::-  @MKV_FILES_ROHESH **</b>"""
 
     IMDB_TEMPLATE_TXT = """
-<b>📻 ᴛɪᴛʟᴇ - {title}</b>
+<b>🎬 ᴛɪᴛʟᴇ - {title}</b>
 <b>🎭 ɢᴇɴʀᴇs - {genres}</b>
 <b>🎖 ʀᴀᴛɪɴɢ - {rating}</b>
 <b>📆 ʏᴇᴀʀ - {release_date}</b>
-<b>❗️ ʟᴀɴɢᴜᴀɢᴇ - {languages}</b>
+<b>🕉️ ʟᴀɴɢᴜᴀɢᴇ - {languages}</b>
 """
     
 
@@ -253,7 +254,7 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v4.2 [ Sᴛᴀʙʟᴇ ]</code>
 
-Bʏ @TheMovieProviderBot</b>"""
+Bʏ @Rohesh_Bots</b>"""
 
     LOGO = """
 
@@ -284,7 +285,7 @@ BOT WORKING PROPERLY"""
 ○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ                              
 ○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ   
 
-✨ ᴜᴘɪ ɪᴅ - <code>aaaabhinavmishra@oksbi</code>
+✨ ᴜᴘɪ ɪᴅ - <code>7507446728upi@axl</code>
 
 💢 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ
 
@@ -309,7 +310,7 @@ BOT WORKING PROPERLY"""
 ○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ                              
 ○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ   
 
-✨ ᴜᴘɪ ɪᴅ - <code>aaaabhinavmishra@oksbi</code>
+✨ ᴜᴘɪ ɪᴅ - <code>7507446728upi@axl</code>
 
 💢 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ
 
@@ -334,7 +335,7 @@ BOT WORKING PROPERLY"""
 ○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ                              
 ○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ   
 
-✨ ᴜᴘɪ ɪᴅ - <code>aaaabhinavmishra@oksbi</code>
+✨ ᴜᴘɪ ɪᴅ - <code>7507446728upi@axl</code>
 
 💢 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ
 
@@ -414,7 +415,7 @@ BOT WORKING PROPERLY"""
     
 ⚜️ ᴘᴀʏ ᴀᴍᴍᴏᴜɴᴛ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ᴘʟᴀɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ !
 
-💵 ᴜᴘɪ ɪᴅ - <code>harshal.purohit@paytm</code>
+💵 ᴜᴘɪ ɪᴅ - <code>7507446728upi@axl</code>
 
 ‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>"""
 
@@ -422,7 +423,7 @@ BOT WORKING PROPERLY"""
     
 ⚜️ ᴘᴀʏ ᴀᴍᴍᴏᴜɴᴛ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ᴘʟᴀɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴇᴍʙᴇʀꜱʜɪᴘ !
 
-📸 ǫʀ ᴄᴏᴅᴇ - <a href='https://telegra.ph/Payment-Information-01-03'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ</a>
+📸 ǫʀ ᴄᴏᴅᴇ - <a href=https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ꜱᴄᴀɴ</a>
 
 ‼️ ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.</b>"""
 
@@ -445,7 +446,7 @@ BOT WORKING PROPERLY"""
 ○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ                              
 ○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ   
 
-✨ ᴜᴘɪ ɪᴅ - <code>aaaabhinavmishra@oksbi</code>
+✨ ᴜᴘɪ ɪᴅ - <code>7507446728upi@axl</code>
 
 💢 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ
 
