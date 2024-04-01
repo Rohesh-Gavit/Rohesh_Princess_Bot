@@ -159,18 +159,18 @@ async def next_page(bot, query):
 
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-019')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'📀 ǫᴜᴀʟɪᴛʏ 📀', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("🕉️ ʟᴀɴɢᴜᴀɢᴇ 🕉️", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("☢️ ꜱᴇᴀsᴏɴ ☢️",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'📇 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("📜 ꜱᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("☄️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ☄️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
         ])
 
     else:
@@ -182,13 +182,13 @@ async def next_page(bot, query):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'📀 ǫᴜᴀʟɪᴛʏ 📀', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("🕉️ ʟᴀɴɢᴜᴀɢᴇ 🕉️", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("☢️ ꜱᴇᴀsᴏɴ ☢️",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'📇 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("📜 ꜱᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("☄️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ☄️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
         ])
 
     try:
@@ -396,36 +396,36 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'📀 ǫᴜᴀʟɪᴛʏ 📀', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("🕉️ ʟᴀɴɢᴜᴀɢᴇ 🕉️", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("☢️ ꜱᴇᴀsᴏɴ ☢️",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'📇 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("📜 ꜱᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-                InlineKeyboardButton("☄️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ☄️", callback_data=f"sendfiles#{key}")
+                InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
         ])
 
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'📀 ǫᴜᴀʟɪᴛʏ 📀', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("🕉️ ʟᴀɴɢᴜᴀɢᴇ 🕉️", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("☢️ ꜱᴇᴀsᴏɴ ☢️",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'📇 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("📜 ꜱᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("☄️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ☄️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
         ])
 
     if offset != "":
@@ -559,36 +559,36 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'📀 ǫᴜᴀʟɪᴛʏ 📀', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("🕉️ ʟᴀɴɢᴜᴀɢᴇ 🕉️", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("☢️ ꜱᴇᴀsᴏɴ ☢️",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'📇 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("📜 ꜱᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("☄️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ☄️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
         ])
 
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'📀 ǫᴜᴀʟɪᴛʏ 📀', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("🕉️ ʟᴀɴɢᴜᴀɢᴇ 🕉️", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("☢️ ꜱᴇᴀsᴏɴ ☢️",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'📇 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("📜 ꜱᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("☄️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ☄️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
         ])
 
     if offset != "":
@@ -758,18 +758,18 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'📀 ǫᴜᴀʟɪᴛʏ 📀', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("🕉️ ʟᴀɴɢᴜᴀɢᴇ 🕉️", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("☢️ ꜱᴇᴀsᴏɴ ☢️",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'📇 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("📜 ꜱᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("☄️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ☄️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
         ])
     
     offset = 0
@@ -1525,10 +1525,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕️⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇆➕️', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ ⚙️', url='https://telegram.me/Filmy_Rohesh'),
-            InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ 💸', callback_data="seeplans")
+            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://telegram.me/Filmy_Rohesh'),
+            InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data="seeplans")
             ],[
             InlineKeyboardButton("🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫", callback_data="shortlink_info")
         ]]
@@ -1767,15 +1767,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
   
     elif query.data == "channels":
         buttons = [[
-            InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/Filmy_Rohesh_12')
+            InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/Filmy_Rohesh')
         ],[
-            InlineKeyboardButton('🔍 ɢʀᴏᴜᴘ¹', url='https://t.me/Filmy_Rohesh_12'),
-            InlineKeyboardButton('ɢʀᴏᴜᴘ² 🔎', url='https://t.me/Filmy_Rohesh_12')
+            InlineKeyboardButton('🔍 ɢʀᴏᴜᴘ¹', url='https://t.me/Filmy_Rohesh'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ² 🔎', url='https://t.me/Filmy_Rohesh')
         ],[
-            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/Filmy_Rohesh_12')
+            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/Filmy_Rohesh')
         ],[
             InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/Filmy_Rohesh_12')
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/Filmy_Rohesh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -2054,7 +2054,7 @@ async def auto_filter(client, msg, spoll=False):
         if len(message.text) < 100:
             search = message.text
             m=await message.reply_sticker("CAACAgQAAxkBAAEKSxplArIUActk4ORQuFn3DHFvBqQCOgACBQMAAnJxFyVYcSIunXgGjjAE",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'{search} sᴇᴀʀᴄʜɪɴɢ...🔍', url=f"https://t.me/mvvaibhav")]]) 
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'{search} sᴇᴀʀᴄʜɪɴɢ...🔍', url=f"https://t.me/MKV_FILES_ROHESH")]]) 
             )
             search = search.lower()
             find = search.split(" ")
@@ -2085,7 +2085,7 @@ async def auto_filter(client, msg, spoll=False):
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
         m=await message.reply_sticker("CAACAgQAAxkBAAEKSxplArIUActk4ORQuFn3DHFvBqQCOgACBQMAAnJxFyVYcSIunXgGjjAE",
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'{search} sᴇᴀʀᴄʜɪɴɢ...🔍', url=f"https://t.me/Filmy_Rohesh")]]) 
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'{search} sᴇᴀʀᴄʜɪɴɢ...🔍', url=f"https://t.me/MKV_FILES_ROHESH")]]) 
         )
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
@@ -2105,36 +2105,36 @@ async def auto_filter(client, msg, spoll=False):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url='https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url='https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'📀 ǫᴜᴀʟɪᴛʏ 📀', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("🕉️ ʟᴀɴɢᴜᴀɢᴇ 🕉️", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("☢️ ꜱᴇᴀsᴏɴ ☢️",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'📇 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("📜 ꜱᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("☄️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ☄️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
         ])
 
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url='https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🥇 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🥇", url='https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'📀 ǫᴜᴀʟɪᴛʏ 📀', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("🕉️ ʟᴀɴɢᴜᴀɢᴇ 🕉️", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("☢️ ꜱᴇᴀsᴏɴ ☢️",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'📇 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("📜 ꜱᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("☄️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ☄️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("♻️ ꜱᴇɴᴅ ᴀʟʟ ꜰɪʟᴇꜱ ♻️", callback_data=f"sendfiles#{key}")
         ])
 
     if offset != "":
