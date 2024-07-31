@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://graph.org/file/54a0de14a321cb5318d85.jpg" alt="Toji mv Bot Logo">
+  <img src="https://graph.org/file/54a0de14a321cb5318d85.jpg" alt="Rohesh Princess Logo">
 </p>
 <h1 align="center">
-  <a href="https://telegram.me/TheMovieProviderBot">TOJI MV BOT</a>
+  <a href="https://telegram.me/Rohesh_Bot">ROHESH PRINCESS</a>
 </h1>
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+TOJI-MV-BOT;A+SIMPLE+AND+POWERFUL+BOT!;A+BOT+WITH+CUSTOM+URL+SHORTNER;AND+CUSTOM+TUTORIAL!;ALSO+HAVE+STREAM+ONLINE;AND+FAST+DOWNLOAD+FEATURE!;AND+MANY+MORE+FEATURES!)
