@@ -169,7 +169,7 @@ python3 bot.py
 
 ## Note 🏷️
  
-* [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://telegram.me/DeletedFromEarth)
+* [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://telegram.me/Rohesh_Gavit)
 
 [Note To A So Called Dev](https://telegram.dog/subin_works/203): 
 
