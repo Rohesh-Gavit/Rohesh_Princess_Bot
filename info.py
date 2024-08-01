@@ -129,7 +129,7 @@ else:
     URL = "http://{}/".format(FQDN)
 
 # add premium logs channel id
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002071135878')
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002071135878'))
 
 
 
