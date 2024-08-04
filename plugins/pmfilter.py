@@ -150,7 +150,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂{get_size(file.file_size)}🎥 {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -164,13 +164,13 @@ async def next_page(bot, query):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝙌𝙐𝘼𝙇𝙄𝙏𝙔', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("𝙎𝙀𝘼𝙎𝙊𝙉",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕️ 𝙎𝙀𝙉𝘿 𝘼𝙇𝙇 𝙁𝙄𝙇𝙀𝙎 ⭕️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     else:
@@ -182,13 +182,13 @@ async def next_page(bot, query):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝙌𝙐𝘼𝙇𝙄𝙏𝙔', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("𝙎𝙀𝘼𝙎𝙊𝙉",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕️ 𝙎𝙀𝙉𝘿 𝘼𝙇𝙇 𝙁𝙄𝙇𝙀𝙎 ⭕️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     try:
@@ -389,7 +389,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂{get_size(file.file_size)}🎥  {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -401,13 +401,13 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝙌𝙐𝘼𝙇𝙄𝙏𝙔', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("𝙎𝙀𝘼𝙎𝙊𝙉",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-                InlineKeyboardButton("⭕️ 𝙎𝙀𝙉𝘿 𝘼𝙇𝙇 𝙁𝙄𝙇𝙀𝙎 ⭕️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     else:
@@ -419,13 +419,13 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝙌𝙐𝘼𝙇𝙄𝙏𝙔', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("𝙎𝙀𝘼𝙎𝙊𝙉",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕️ 𝙎𝙀𝙉𝘿 𝘼𝙇𝙇 𝙁𝙄𝙇𝙀𝙎 ⭕️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     if offset != "":
@@ -552,7 +552,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂{get_size(file.file_size)}🎥 {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -564,13 +564,13 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝙌𝙐𝘼𝙇𝙄𝙏𝙔', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("𝙎𝙀𝘼𝙎𝙊𝙉",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕️ 𝙎𝙀𝙉𝘿 𝘼𝙇𝙇 𝙁𝙄𝙇𝙀𝙎 ⭕️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     else:
@@ -582,13 +582,13 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝙌𝙐𝘼𝙇𝙄𝙏𝙔', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("𝙎𝙀𝘼𝙎𝙊𝙉",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕️ 𝙎𝙀𝙉𝘿 𝘼𝙇𝙇 𝙁𝙄𝙇𝙀𝙎 ⭕️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     if offset != "":
@@ -745,7 +745,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂{get_size(file.file_size)}🎥  {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -763,13 +763,13 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝙌𝙐𝘼𝙇𝙄𝙏𝙔', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("𝙎𝙀𝘼𝙎𝙊𝙉",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕️ 𝙎𝙀𝙉𝘿 𝘼𝙇𝙇 𝙁𝙄𝙇𝙀𝙎 ⭕️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
     
     offset = 0
@@ -2098,7 +2098,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂{get_size(file.file_size)}🎥 {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -2110,13 +2110,13 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝙌𝙐𝘼𝙇𝙄𝙏𝙔', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("𝙎𝙀𝘼𝙎𝙊𝙉",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕️ 𝙎𝙀𝙉𝘿 𝘼𝙇𝙇 𝙁𝙄𝙇𝙀𝙎 ⭕️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     else:
@@ -2128,13 +2128,13 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'𝙌𝙐𝘼𝙇𝙄𝙏𝙔', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("𝙎𝙀𝘼𝙎𝙊𝙉",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("⭕️ 𝙎𝙀𝙉𝘿 𝘼𝙇𝙇 𝙁𝙄𝙇𝙀𝙎 ⭕️", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     if offset != "":
@@ -2198,7 +2198,7 @@ async def auto_filter(client, msg, spoll=False):
         if not settings["button"]:
             cap+="\n\n<b> ✨<u> ɴɪᴄᴇ ᴄʜᴏɪᴄᴇ </u>✨\n\n</b>"
             for file in files:
-                cap += f"<b>\n📂<a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>🎥 [{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n</a></b>"
+                cap += f"<b>\n📂<a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>▷ [{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n</a></b>"
     else:
         if settings["button"]:
             cap = f"<b>📂 ʜᴇʀᴇ ɪ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ sᴇᴀʀᴄʜ <code>{search}</code>\n\n</b>"
@@ -2206,7 +2206,7 @@ async def auto_filter(client, msg, spoll=False):
             cap = f"<b>📂 ʜᴇʀᴇ ɪ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ sᴇᴀʀᴄʜ <code>{search}</code>\n\n</b>"
             # cap+="<b>Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
             for file in files:
-                cap += f"<b>▶ <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'> [{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
+                cap += f"<b>▷ <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'> [{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
 
     if imdb and imdb.get('poster'):
         try:
