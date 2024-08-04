@@ -45,7 +45,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://telegram.me/Filmy_Rohesh'),
+            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Movies4UWorldOfficiall'),
             InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data="seeplans")
             ],[
             InlineKeyboardButton("🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫", callback_data="shortlink_info")
@@ -105,7 +105,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://telegram.me/Filmy_Rohesh'),
+            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Movies4UWorldOfficiall'),
             InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data="seeplans")
             ],[
             InlineKeyboardButton("🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫", callback_data="shortlink_info")
