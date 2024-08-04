@@ -231,7 +231,7 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 """ 
    # PLEASE DO NOT REMOVE ANY CREDITS ❤️‍🩹
     
-    CAPTION = """<b>**[{file_name}](https://t.me/Filmy_Rohesh)
+    CAPTION = """<b>**[{file_name}](https://t.me/AwaraTeamSupport)
 ╔════════════════════════╗
 🌺ʜᴀᴘᴘʏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴᴅ ᴄᴏᴍᴇ ᴀɢᴀɪɴ🌷
 ╚════════════════════════╝
