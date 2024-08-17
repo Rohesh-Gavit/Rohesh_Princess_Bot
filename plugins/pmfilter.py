@@ -1,3 +1,4 @@
+# Thanks @Rohesh_Gavit
 import asyncio
 import re
 import ast
@@ -96,7 +97,7 @@ async def give_filter(client, message):
             return
         else:
             return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ ✅\n\n > ꜰɪʟᴇꜱ ꜰᴏᴜɴᴅ : {str(total_results)}\n🔍 ꜱᴇᴀʀᴄʜ :</b> <code>{search}</code>\n\n<b>‼️ ᴛʜɪs ɪs ᴀ <u>sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ</u> sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\n📝 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ : 👇</b>",   
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 ᴊᴏɪɴ ᴀɴᴅ ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=f"https://t.me/Filmy_Rohesh")]]))
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 ᴊᴏɪɴ ᴀɴᴅ ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=f"https://t.me/Movies4UWorldOfficiall")]]))
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def pm_text(bot, message):
@@ -107,7 +108,7 @@ async def pm_text(bot, message):
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
          text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/Filmy_Rohesh")]])
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/Movies4UWorldOfficiall")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -157,32 +158,36 @@ async def next_page(bot, query):
 
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://t.me/c/2227027592/3')
             ]
         )
         btn.insert(0, 
             [
-                 InlineKeyboardButton("🉐 sᴇʟᴇᴄᴛᴇ ᴍᴏᴠɪᴇ ʟᴀɴɢᴜᴀɢᴇ 🉐", callback_data=f"languages#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("✨ ᴀʟʟ ꜰɪʟᴇꜱ ✨", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://t.me/c/2227027592/3')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("🉐 sᴇʟᴇᴄᴛᴇ ᴍᴏᴠɪᴇ ʟᴀɴɢᴜᴀɢᴇ 🉐", callback_data=f"languages#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("✨ ᴀʟʟ ꜰɪʟᴇꜱ ✨", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     try:
@@ -390,32 +395,36 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://t.me/c/2227027592/3')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("🉐 sᴇʟᴇᴄᴛᴇ ᴍᴏᴠɪᴇ ʟᴀɴɢᴜᴀɢᴇ 🉐", callback_data=f"languages#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("✨ ᴀʟʟ ꜰɪʟᴇꜱ ✨", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://t.me/c/2227027592/3')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("🉐 sᴇʟᴇᴄᴛᴇ ᴍᴏᴠɪᴇ ʟᴀɴɢᴜᴀɢᴇ 🉐", callback_data=f"languages#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("✨ ᴀʟʟ ꜰɪʟᴇꜱ ✨", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     if offset != "":
@@ -549,16 +558,18 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://t.me/c/2227027592/3')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("🉐 sᴇʟᴇᴄᴛᴇ ᴍᴏᴠɪᴇ ʟᴀɴɢᴜᴀɢᴇ 🉐", callback_data=f"languages#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("✨ ᴀʟʟ ꜰɪʟᴇꜱ ✨", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     else:
@@ -570,11 +581,13 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("🉐 sᴇʟᴇᴄᴛᴇ ᴍᴏᴠɪᴇ ʟᴀɴɢᴜᴀɢᴇ 🉐", callback_data=f"languages#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("✨ ᴀʟʟ ꜰɪʟᴇꜱ ✨", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     if offset != "":
@@ -744,16 +757,18 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://t.me/c/2227027592/3')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("🉐 sᴇʟᴇᴄᴛᴇ ᴍᴏᴠɪᴇ ʟᴀɴɢᴜᴀɢᴇ 🉐", callback_data=f"languages#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("✨ ᴀʟʟ ꜰɪʟᴇꜱ ✨", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
     
     offset = 0
@@ -1381,7 +1396,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/Filmy_Rohesh")
+                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/Movies4UWorldOfficiall")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1406,7 +1421,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/Filmy_Rohesh")
+                 InlineKeyboardButton("🔍 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url="https://t.me/Movies4UWorldOfficiall")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1511,8 +1526,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⛩️ ᴄʜᴀɴɴᴇʟ', url='https://telegram.me/Filmy_Rohesh'),
-            InlineKeyboardButton('👀 ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://t.me/https://t.me/AwaraTeamSupport'),
+            InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data="seeplans")
             ],[
             InlineKeyboardButton("🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫", callback_data="shortlink_info")
         ]]
@@ -1552,7 +1567,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "upi_info":
         buttons = [[
-            InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', user_id=int(5698613889))
+            InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', user_id=int(7165581725))
         ],[
             InlineKeyboardButton('🗑 ᴄʟᴏsᴇ 🗑', callback_data='close_data')
         ]]
@@ -1565,7 +1580,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "qr_info":
         buttons = [[
-            InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', user_id=int(5698613889))
+            InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', user_id=int(7165581725))
         ],[
             InlineKeyboardButton('🗑 ᴄʟᴏsᴇ 🗑', callback_data='close_data')
         ]]
@@ -1578,7 +1593,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "seeplans":
         btn = [[
-            InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', user_id=int(5698613889))
+            InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', user_id=int(7165581725))
         ],[
             InlineKeyboardButton('🗑 ᴄʟᴏsᴇ 🗑', callback_data='close_data')
         ]]
@@ -1733,7 +1748,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "other":
         buttons = [[
-            InlineKeyboardButton('☎️ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id=int(5698613889))
+            InlineKeyboardButton('☎️ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ', user_id=int(7165581725))
         ],[
             InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='diamond'),
             InlineKeyboardButton('7 / 7', callback_data='pagesn1'),
@@ -1823,10 +1838,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer'),
         ], [
-            InlineKeyboardButton ('👨‍💻 ᴄʀᴇᴅɪᴛꜱ ᴛᴏ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ 👨‍💻', callback_data='credits'),
+            InlineKeyboardButton ('• ᴄʀᴇᴅɪᴛꜱ ᴛᴏ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ •', callback_data='credits'),
         ], [
-            InlineKeyboardButton('👀 ᴏᴡɴᴇʀ 👀', user_id=int(5698613889)),
-            InlineKeyboardButton('📁 ꜱᴛᴀᴛꜱ 📁', callback_data='stats')
+            InlineKeyboardButton('• ᴏᴡɴᴇʀ •', user_id=int(7165581725)),
+            InlineKeyboardButton('• ꜱᴛᴀᴛꜱ •', callback_data='stats')
         ], [
             InlineKeyboardButton('🛰️ ʀᴇɴᴅᴇʀɪɴɢ ꜱᴛᴀᴛᴜꜱ ☁️',callback_data='rendr')
         ], [
@@ -2037,8 +2052,8 @@ async def auto_filter(client, msg, spoll=False):
             return
         if len(message.text) < 100:
             search = message.text
-            m=await message.reply_sticker("CAACAgQAAxkBAAJl-2aZ2T5iYARza08UX1tJ-zkOs_qOAAJuDwAC4eqxUNoxB5joJxGiNQQ",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'{search} sᴇᴀʀᴄʜɪɴɢ...🔍', url=f"https://t.me/Filmy_Rohesh")]]) 
+            m=await message.reply_sticker("CAACAgQAAxkBAAEKSxplArIUActk4ORQuFn3DHFvBqQCOgACBQMAAnJxFyVYcSIunXgGjjAE",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'{search} sᴇᴀʀᴄʜɪɴɢ...🔍', url=f"https://t.me/MKV_FILES_ROHESH")]]) 
             )
             search = search.lower()
             find = search.split(" ")
@@ -2068,8 +2083,8 @@ async def auto_filter(client, msg, spoll=False):
     else:
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
-        m=await message.reply_sticker("CAACAgQAAxkBAAJl-2aZ2T5iYARza08UX1tJ-zkOs_qOAAJuDwAC4eqxUNoxB5joJxGiNQQ",
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'{search} sᴇᴀʀᴄʜɪɴɢ...🔍', url=f"https://t.me/MKV_FILES_ROHESH")]]) 
+        m=await message.reply_sticker("CAACAgQAAxkBAAEKSxplArIUActk4ORQuFn3DHFvBqQCOgACBQMAAnJxFyVYcSIunXgGjjAE",
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'{search} sᴇᴀʀᴄʜɪɴɢ...🔍', url=f"https://t.me/Movies4UWorldOfficiall")]]) 
         )
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
@@ -2089,32 +2104,36 @@ async def auto_filter(client, msg, spoll=False):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url='https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://t.me/c/2227027592/3')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("🉐 sᴇʟᴇᴄᴛᴇ ᴍᴏᴠɪᴇ ʟᴀɴɢᴜᴀɢᴇ 🉐", callback_data=f"languages#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("✨ ᴀʟʟ ꜰɪʟᴇꜱ ✨", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url='https://telegra.ph/ᴘʟᴀɴs-ᴘʀᴇᴍɪᴜᴍ-ғᴇᴀᴛᴜʀᴇs-Get-04-01')
+                InlineKeyboardButton("🌟 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 🌟", url=f'https://t.me/c/2227027592/3')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("🉐 sᴇʟᴇᴄᴛᴇ ᴍᴏᴠɪᴇ ʟᴀɴɢᴜᴀɢᴇ 🉐", callback_data=f"languages#{key}")
+                InlineKeyboardButton(f'ϙᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("✨ ᴀʟʟ ꜰɪʟᴇꜱ ✨", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs", callback_data=f"sendfiles#{key}")
         ])
 
     if offset != "":
@@ -2178,7 +2197,7 @@ async def auto_filter(client, msg, spoll=False):
         if not settings["button"]:
             cap+="\n\n<b> ✨<u> ɴɪᴄᴇ ᴄʜᴏɪᴄᴇ </u>✨\n\n</b>"
             for file in files:
-                cap += f"<b>\n📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'> ▷ [{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n</a></b>"
+                cap += f"<b>\n📂<a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>▷ [{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n</a></b>"
     else:
         if settings["button"]:
             cap = f"<b>📂 ʜᴇʀᴇ ɪ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ sᴇᴀʀᴄʜ <code>{search}</code>\n\n</b>"
@@ -2186,7 +2205,7 @@ async def auto_filter(client, msg, spoll=False):
             cap = f"<b>📂 ʜᴇʀᴇ ɪ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ sᴇᴀʀᴄʜ <code>{search}</code>\n\n</b>"
             # cap+="<b>Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
             for file in files:
-                cap += f"<b>▶ <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'> [{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
+                cap += f"<b>▷ <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'> [{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
 
     if imdb and imdb.get('poster'):
         try:
@@ -2270,7 +2289,7 @@ async def advantage_spell_chok(client, msg):
         if not g_s:
             reqst_gle = query.replace(" ", "+")
             button = [[
-                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/MKV_ROHESH_FILES")
+                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/MKV_FILES_ROHESH")
             ]]
             if NO_RESULTS_MSG:
                 await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
@@ -2307,7 +2326,7 @@ async def advantage_spell_chok(client, msg):
         if not movielist:
             reqst_gle = query.replace(" ", "+")
             button = [[
-                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/Filmy_Rohesh")
+                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/MKV_FILES_ROHESH")
             ]]
             if NO_RESULTS_MSG:
                 await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
@@ -2348,7 +2367,7 @@ async def advantage_spell_chok(client, msg):
             logger.exception(e)
             reqst_gle = mv_rqst.replace(" ", "+")
             button = [[
-                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/Filmy_Rohesh")
+                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/MKV_FILES_ROHESH")
             ]]
             if NO_RESULTS_MSG:
                 await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
@@ -2363,7 +2382,7 @@ async def advantage_spell_chok(client, msg):
         if not movies:
             reqst_gle = mv_rqst.replace(" ", "+")
             button = [[
-                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/Filmy_Rohesh")
+                       InlineKeyboardButton("📝 ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ", url=f"https://t.me/MKV_FILES_ROHESH")
             ]]
             if NO_RESULTS_MSG:
                 await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
