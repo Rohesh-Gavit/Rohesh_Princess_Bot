@@ -21,12 +21,13 @@ logger = logging.getLogger(__name__)
 
 TIMEZONE = "Asia/Kolkata"
 BATCH_FILES = {}
+EMOJIS = [ "👀", "🧨", "🔥", "😍", "🎉", "🥰", "😇", "⚡" ]
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 🤖', url="https://t.me/AwaraTeamSupport")
+                    InlineKeyboardButton('⛩️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⛩️', url="https://telegram.me/Filmy_Rohesh")
                 ],[
                     InlineKeyboardButton('💁‍♂️ sᴇᴇ ᴍᴇ 💁‍♂️', url=f"https://telegram.me/Rohesh_Gavit")
                   ]]
@@ -45,8 +46,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://t.me/AwaraTeamSupport'),
-            InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data="seeplans")
+            InlineKeyboardButton('⛩️ ᴄʜᴀɴɴᴇʟ', url='https://telegram.me/Filmy_Rohesh'),
+            InlineKeyboardButton('👀 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
             InlineKeyboardButton("🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫", callback_data="shortlink_info")
         ]]
@@ -82,6 +83,7 @@ async def start(client, message):
             return
         btn = [
             [
+                InlineKeyboardButton('📥 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴅ 📥', url='https://t.me/How_To_Downlod_Files_Movies/6'),
                 InlineKeyboardButton(
                     "📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌", url=invite_link.invite_link
                 )
@@ -105,8 +107,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://t.me/AwaraTeamSupport'),
-            InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data="seeplans")
+            InlineKeyboardButton('⛩️ ᴄʜᴀɴɴᴇʟ', url='https://telegram.me/Filmy_Rohesh'),
+            InlineKeyboardButton('👀 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
             InlineKeyboardButton("🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫", callback_data="shortlink_info")
         ]]
